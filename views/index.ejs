@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LUAT NGUYEN WebRTC</title>
+        <script src="jquery.js"></script>
+        <script src="peer.js"></script>
+    </head>
+    <body>
+        <div id="dv-none">
+        <input type="text" name="" id="txtUsername">
+        <button id="btnSigut">Sign Up</button>
+        </div>
+        <div id="dv-chat">
+        <H1>USERS ONLINE</H1>
+        <ul id="user-online">
+
+        </ul>
+        <h3 id="my-peer">your peerId: </h3>
+        <video id="localStream" width="300" controls></video>
+        <br /><br />
+        <video id="remoteStream" width="300" controls></video>
+        <br /><br />
+       
+        <input type="text" id="remoteId" placeholder="REMOTE PEER">
+        <button id="btnCall">Call</button>
+    </div>
+    </body>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="main.js"></script>
+</html>
